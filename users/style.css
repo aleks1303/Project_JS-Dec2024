@@ -1,0 +1,32 @@
+
+body{
+    background: linear-gradient(#37258f, #ffffff);
+}
+#users {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.user {
+    width: 45%;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(183, 224, 251, 0.7);
+}
+.btn {
+    padding: 8px 50px;
+    border-radius: 5px;
+    box-shadow: 7px -5px 5px rgba(1, 12, 66, 0.68);
+    background-color: rgb(158, 185, 243);
+    margin-top: 10px;
+}
+
+.id {
+    font-size: 30px;
+    margin: 5px 0 0 0;
+}
