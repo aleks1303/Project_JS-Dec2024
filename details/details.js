@@ -2,7 +2,6 @@
 const userInfo = document.getElementById('details');
 
 const userJS = JSON.parse(localStorage.getItem('user'));
-console.log(userJS)
 // localStorage.removeItem('user');
 let urlPosts = new URL('https://jsonplaceholder.typicode.com/posts');
 urlPosts.searchParams.set('userId', userJS)
@@ -14,7 +13,6 @@ async function detailsOfUser() {
     const users = await fetch(urlUser)
         .then((response) => response.json());
     for (const user of users) {
-        console.log(user)
         const divUser = document.createElement('div');
         divUser.classList.add('divUser');
         const id = document.createElement('h2');
@@ -99,6 +97,7 @@ async function detailsOfUser() {
                 btnTitle.onclick = function () {
                     window.open('../comments/post-details.html');
                     localStorage.setItem('postId', post.id)
+                    localStorage.setItem('id', post.id)
                 }
                 blockStyle.append(block)
                 block.append(title, btnTitle)

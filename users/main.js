@@ -31,6 +31,5 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
             div.append(id, name, button)
             blockUsers.appendChild(div)
-            console.log(user)
         }
     });
