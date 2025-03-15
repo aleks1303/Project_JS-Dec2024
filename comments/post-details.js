@@ -9,14 +9,16 @@ urlComments.searchParams.set('postId', postId);
 
 const infoPost = document.getElementById('post-details');
 
+
+function createParagraph(text) {
+    const p = document.createElement('p');
+    p.innerText = text;
+    return p;
+}
 async function commentsOfPost() {
     const divPost = document.createElement('div')
     divPost.classList.add('infoPost');
-    function createParagraph(text) {
-        const p = document.createElement('p');
-        p.innerText = text;
-        return p;
-    }
+
 
     const post = await fetch(urlPost)
         .then((response) => response.json())

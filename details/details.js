@@ -8,7 +8,6 @@ urlPosts.searchParams.set('userId', userJS)
 let urlUser = new URL('https://jsonplaceholder.typicode.com/users')
 urlUser.searchParams.set('id', userJS)
 
-
 async function detailsOfUser() {
     const users = await fetch(urlUser)
         .then((response) => response.json());
