@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: linear-gradient(#a3e4f8, #b3f2fd);
+}
 
 #post-details{
     width: 100vw;
@@ -14,13 +17,15 @@
 }
 
 .infoPost {
+    background: linear-gradient(#3fccff, #abe8ff);
     width: 50%;
     padding: 10px;
     margin: 20px 0 50px 0 ;
     display: flex;
     flex-direction: column;
-    border: 1px black solid;
+    border: 2px #005a98 solid;
     border-radius: 10px;
+
     gap:10px;
     font-size: 20px;
     font-weight: 500;
@@ -37,7 +42,9 @@
 
 }
 .comment {
-    border: 1px black solid;
+    background: linear-gradient(#7ed9fa, #b8ebff) ;
+    border: 2px #005a98 solid;
+    border-radius: 10px;
     width: 23%;
     display: flex;
     flex-direction: column;
